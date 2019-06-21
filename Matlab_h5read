@@ -1,0 +1,2 @@
+h5disp('write_anaconda.h5');                        %반드시 먼저 h5 파일의 정보를 보고 dataset의 이름을 알아야 함
+data = h5read('write_anaconda.h5','/dataset_1');    %알아낸 dataset의 이름을 옵션으로 넣어 전체 데이터를 불어옴
