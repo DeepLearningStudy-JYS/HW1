@@ -1,0 +1,6 @@
+%% hdf5 변환
+
+a = imread('Anaconda.jpg');                         %변수 a에 Anaconda.jpg를 읽어와서 저장함
+h5create('anaconda.h5', '/dataset1', size(a));      %anaconda.h5라는 이름으로 hdf5 파일을 만듦
+h5write('anaconda.h5', '/dataset1', a);             %작성된 anaconda.h5파일에 변수 a를 덮어씌움
+h5disp('anaconda.h5')                               %작성된 anaconda.h5파일에 정보를 출력함
